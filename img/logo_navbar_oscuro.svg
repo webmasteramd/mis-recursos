@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="500" height="160">
+  <defs>
+    <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F4F0"/>
+      <stop offset="100%" style="stop-color:#F5F4F0"/>
+    </linearGradient>
+    <linearGradient id="lg2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B8922A"/>
+      <stop offset="100%" style="stop-color:#E2C06A"/>
+    </linearGradient>
+
+    <!-- Typewriter clip mask for each letter of "Familia" -->
+    <!-- F -->
+    <clipPath id="cF">
+      <rect x="0" y="0" width="500" height="160">
+        <animate attributeName="width" values="0;500" dur="0.01s" begin="0.2s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- ICON — Rounded arch container      -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- Arch background -->
+  <path d="M62,142 L62,80 Q62,22 118,22 Q174,22 174,80 L174,142 Z"
+    fill="rgba(245,244,240,0.08)"/>
+
+  <!-- Gold outer ring -->
+  <path d="M62,142 L62,80 Q62,22 118,22 Q174,22 174,80 L174,142"
+    stroke="url(#lg2)" stroke-width="2.5" fill="none"/>
+
+  <!-- Blue inner ring -->
+  <path d="M70,142 L70,82 Q70,32 118,32 Q166,32 166,82 L166,142"
+    stroke="url(#lg1)" stroke-width="2" fill="none" opacity="0.2"/>
+
+  <!-- ── MINI BALANZA (reemplaza corazón) ── -->
+  <!-- Pilar central -->
+  <rect x="116.5" y="40" width="3" height="18" rx="1.5" fill="#C9A84C"/>
+  <!-- Base pilar -->
+  <rect x="110" y="57" width="16" height="2.5" rx="1.25" fill="#C9A84C"/>
+  <!-- Punto central (pivot) -->
+  <circle cx="118" cy="40" r="3" fill="#C9A84C"/>
+  <!-- Brazo horizontal -->
+  <rect x="100" y="38.5" width="36" height="2.5" rx="1.25" fill="#F5F4F0"/>
+  <!-- Cadena izquierda -->
+  <line x1="102" y1="41" x2="100" y2="50" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Cadena derecha -->
+  <line x1="134" y1="41" x2="136" y2="50" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Platillo izquierdo -->
+  <path d="M94,50 Q100,57 106,50" stroke="#C9A84C" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Platillo derecho -->
+  <path d="M130,50 Q136,57 142,50" stroke="#C9A84C" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- ── SILUETAS FAMILIARES ── -->
+  <!-- Adulto izquierdo — cuerpo -->
+  <ellipse cx="89" cy="113" rx="13" ry="24" fill="#F5F4F0" stroke="#F5F4F0" stroke-width="1.5"/>
+  <!-- Adulto izquierdo — cabeza -->
+  <circle cx="89" cy="78" r="10" fill="#F5F4F0" stroke="#F5F4F0" stroke-width="1.5"/>
+
+  <!-- Adulto derecho — cuerpo -->
+  <ellipse cx="147" cy="115" rx="12" ry="22" fill="#F5F4F0" stroke="#F5F4F0" stroke-width="1.5"/>
+  <!-- Adulto derecho — cabeza -->
+  <circle cx="147" cy="82" r="9" fill="#F5F4F0" stroke="#F5F4F0" stroke-width="1.5"/>
+
+  <!-- Niño centro — cuerpo -->
+  <ellipse cx="118" cy="121" rx="9" ry="17" fill="url(#lg2)" stroke="#F5F4F0" stroke-width="1.5"/>
+  <!-- Niño centro — cabeza -->
+  <circle cx="118" cy="97" r="8" fill="url(#lg2)" stroke="#F5F4F0" stroke-width="1.5"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- DIVIDER                            -->
+  <!-- ═══════════════════════════════════ -->
+  <rect x="190" y="28" width="2" height="104" rx="1" fill="#C9A84C" opacity="0.3"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- TEXTO ESTÁTICO: ABOGADOS EN        -->
+  <!-- ═══════════════════════════════════ -->
+  <text x="208" y="68"
+    font-family="Arial, sans-serif"
+    font-size="11.5"
+    font-weight="bold"
+    fill="#F5F4F0"
+    letter-spacing="7">ABOGADOS EN</text>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- FAMILIA — Typewriter animado        -->
+  <!-- Cada letra aparece con opacity 0→1  -->
+  <!-- Delay escalonado: 0.2s por letra    -->
+  <!-- Loop total: 7 letras × 0.2s = 1.4s -->
+  <!-- Pausa 2s → reinicia a los 5s        -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- F -->
+  <text x="205" y="112" font-family="Georgia,'Times New Roman',serif" font-size="44" font-weight="bold" fill="#F5F4F0">
+    F<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.03;0.06;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <!-- a -->
+  <text x="236" y="112" font-family="Georgia,'Times New Roman',serif" font-size="44" font-weight="bold" fill="#F5F4F0">
+    a<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.06;0.09;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <!-- m -->
+  <text x="262" y="112" font-family="Georgia,'Times New Roman',serif" font-size="44" font-weight="bold" fill="#F5F4F0">
+    m<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.09;0.12;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <!-- i -->
+  <text x="308" y="112" font-family="Georgia,'Times New Roman',serif" font-size="44" font-weight="bold" fill="#F5F4F0">
+    i<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.12;0.15;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <!-- l -->
+  <text x="324" y="112" font-family="Georgia,'Times New Roman',serif" font-size="44" font-weight="bold" fill="#F5F4F0">
+    l<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.15;0.18;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <!-- i -->
+  <text x="340" y="112" font-family="Georgia,'Times New Roman',serif" font-size="44" font-weight="bold" fill="#F5F4F0">
+    i<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.18;0.21;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <!-- a -->
+  <text x="356" y="112" font-family="Georgia,'Times New Roman',serif" font-size="44" font-weight="bold" fill="#F5F4F0">
+    a<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.21;0.24;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- LÍNEA DORADA — aparece al final    -->
+  <!-- ═══════════════════════════════════ -->
+  <rect x="205" y="120" width="175" height="1.8" rx="0.9" fill="url(#lg2)">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.24;0.30;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ═══════════════════════════════════ -->
+  <!-- TAGLINE — aparece al final         -->
+  <!-- ═══════════════════════════════════ -->
+  <text x="208" y="143"
+    font-family="Georgia, serif"
+    font-size="10.5"
+    font-style="italic"
+    fill="#C9A84C"
+    letter-spacing="0.5">Protegemos lo que más importa
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.28;0.36;0.85;0.88;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+</svg>
